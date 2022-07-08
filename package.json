@@ -1,0 +1,24 @@
+{
+  "name": "craligslist-automation",
+  "version": "2.0.0",
+  "description": "Automated tests for Craigslist",
+  "main": "",
+  "scripts": {
+    "open": "npm run lint-fix && cypress open",
+    "test": "npm run lint-fix && cypress run",
+    "lint": "npx eslint \"**/integration/**/*.js\"",
+    "lint-fix": "npx eslint --fix \"**/integration/**/*.js\""
+  },
+  "eslintIgnore": [
+    "artifacts/**/*.js"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@testing-library/cypress": "8.0.2",
+    "cypress": "9.6.1",
+    "cypress-commands": "2.0.1",
+    "eslint": "8.15.0",
+    "eslint-plugin-cypress": "2.12.1",
+    "prettier": "2.6.2"
+  }
+}
